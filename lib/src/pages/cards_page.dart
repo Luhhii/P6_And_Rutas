@@ -30,13 +30,13 @@ class CardsPage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Text(
-              'Soy una Card',
+              'GPU de la card',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
             SizedBox(
               height: 20,
             ),
-            Text('Dolore aliquip exercitation eiusmod elit est incididunt sint mollit aliqua ex. Pariatur ullamco dolore in ad mollit veniam occaecat. Irure sint elit quis minim.')
+            Text('La GPU de esta tarjeta gráfica, con los 28.000 millones de transistores que incorpora en su interior, acapara una parte relativamente importante de la superficie del PCB a pesar de estar fabricada a partir de una tecnología de integración avanzada.')
           ],
         ),
       ),
@@ -46,21 +46,21 @@ class CardsPage extends StatelessWidget {
   Widget _crearCard2() {
     return Card(
       elevation: 5,
-      color: Colors.deepPurple,
+      color: Colors.deepOrange[900],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Container(
         padding: EdgeInsets.all(20),
         child: Column(
           children: <Widget>[
             Text(
-              'Soy una Card',
+              'Consumo NVIDIA',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
             ),
             SizedBox(
               height: 20,
             ),
             Text(
-              'Dolore aliquip exercitation eiusmod elit est incididunt sint mollit aliqua ex. Pariatur ullamco dolore in ad mollit veniam occaecat. Irure sint elit quis minim.',
+              'Según NVIDIA esta tarjeta gráfica tiene un consumo medio de 320 vatios, por lo que recomienda instalarla en un PC que tenga una fuente de alimentación con una capacidad de entrega de potencia teórica de al menos 750 vatios.',
               style: TextStyle(color: Colors.white),
             )
           ],

@@ -19,11 +19,11 @@ class AlertPage extends StatelessWidget {
               },
               child: Text('Mostar Alerta'),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-              color: Colors.amberAccent,
+              color: Colors.red,
             ),
             FlatButton(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-              color: Colors.blue,
+              color: Colors.green,
               onPressed: () {
                 key.currentState.showSnackBar(SnackBar(
                   content: Text('Hola, soy una Snacbar'),
@@ -40,10 +40,10 @@ class AlertPage extends StatelessWidget {
   Widget mostrarAlerta(BuildContext context) {
     return AlertDialog(
       title: Text(
-        'Hola',
+        'Cuidado',
         style: TextStyle(color: Colors.white),
       ),
-      content: Text('Soy una alerta', style: TextStyle(color: Colors.white)),
+      content: Text('Error 404', style: TextStyle(color: Colors.white)),
       actions: <Widget>[
         FlatButton(
           onPressed: () {
@@ -63,11 +63,11 @@ class AlertPage extends StatelessWidget {
 
   Widget mostrarAlerta2(BuildContext context) {
     return AlertDialog(
-      title: Text('Hola', style: TextStyle(color: Colors.white)),
+      title: Text('Succesful', style: TextStyle(color: Colors.white)),
       elevation: 5,
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Colors.red[200],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      content: Text('Soy una alerta', style: TextStyle(color: Colors.white)),
+      content: Text('Enhorabuena', style: TextStyle(color: Colors.white)),
       actions: <Widget>[
         FlatButton(
           onPressed: () {

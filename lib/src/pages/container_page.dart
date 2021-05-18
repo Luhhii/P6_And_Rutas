@@ -15,7 +15,7 @@ class ContainerPage extends StatelessWidget {
             color: Colors.orange[500],
             child: Center(
                 child: Text(
-              'Hola soy un texto',
+              'Texto Modificado',
               style: TextStyle(color: Colors.white),
             )),
           ),
