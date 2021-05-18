@@ -63,11 +63,11 @@ class AlertPage extends StatelessWidget {
 
   Widget mostrarAlerta2(BuildContext context) {
     return AlertDialog(
-      title: Text('Succesful', style: TextStyle(color: Colors.white)),
+      title: Text('Cuidado', style: TextStyle(color: Colors.white)),
       elevation: 5,
       backgroundColor: Colors.red[200],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      content: Text('Enhorabuena', style: TextStyle(color: Colors.white)),
+      content: Text('Peligro Error 404', style: TextStyle(color: Colors.white)),
       actions: <Widget>[
         FlatButton(
           onPressed: () {
